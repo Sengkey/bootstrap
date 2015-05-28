@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Duality";
+    src: url("Duality.eot");
+    src: url("Duality.eot?#iefix") format("embedded-opentype"),
+         url("Duality.woff") format("woff"),
+         url("Duality.ttf") format("truetype"),
+         url("Duality.svg#Duality") format("svg");
+    font-weight: book;
+    font-style: normal;
+}

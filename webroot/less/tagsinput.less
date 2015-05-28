@@ -1,0 +1,160 @@
+.bootstrap-tagsinput {
+
+  .tagsinput-box {
+    background-color: @input-bg;
+    border: 1px solid @input-border;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: inline-block;
+    padding: @padding-base-vertical @padding-base-horizontal;
+    // margin-bottom: 10px;
+    color: @input-color;
+    vertical-align: middle;
+
+    -moz-border-radius: @input-border-radius @input-border-radius 0 0;
+    -webkit-border-radius: @input-border-radius @input-border-radius 0 0;
+    border-radius: @input-border-radius @input-border-radius 0 0;
+
+    max-width: 100%;
+    width: 100%;
+    min-height:150px; //looks nicer
+    max-height: 150px;
+    line-height: @line-height-base;
+    // cursor: default;
+    overflow-y:auto; //vertical scrollbar only
+
+    .tag {
+      // margin-right: 2px;
+      // color: white;
+      display: block; //inline
+      font-size: 80%; //75%
+      border-bottom: 1px dotted #ccc;
+      padding: 0.3em 0 0; //important for remove icon stacked properly
+      
+      &:hover, &:focus {
+        background:@gray-lighter;
+      }
+
+      b {
+        display: inline-block;
+        padding: .2em .6em .3em;
+        font-weight: bold;
+        line-height: 1;
+        color: @label-color;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+        max-width:20em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      [data-role="remove"] {
+        float:right;
+        margin-left:8px;
+        cursor:pointer;
+
+        //style adapt from icon.less
+        margin: 0em 0.15em 0em 0em; //to balance .tag vertical padding
+
+        // width: 1.23em;
+        // height: 1.1em;
+        font-style: normal;
+        // line-height: 1;
+        font-weight: 700;
+        text-decoration: inherit;
+        text-align: center;
+
+        speak: none;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+
+        -webkit-font-smoothing: antialiased;
+        
+        //circular
+        border-radius: 500em !important;
+
+        padding: 0.15em 0.21em !important;
+
+        -webkit-box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
+
+        line-height: 1 !important;
+        width: 1.5em !important;
+        height: 1.5em !important;
+        
+        //circular.inverted
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+        //color
+        background-color: @gray-light !important;
+        color: #FFFFFF !important;
+
+        &:after{
+          content: "×";
+          padding:0px 2px;
+        }
+        &:hover {
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          &:active {
+            box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+          }
+        }
+      }
+    }
+  }
+  input {
+    //new style
+    background-color: @input-bg;
+    border: 1px solid @input-border;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: inline-block;
+    padding: @padding-base-vertical @padding-base-horizontal;
+    margin-bottom: 10px;
+    color: @input-color;
+    vertical-align: middle;
+
+    -moz-border-radius: 0 0 @input-border-radius @input-border-radius;
+    -webkit-border-radius: 0 0 @input-border-radius @input-border-radius;
+    border-radius: 0 0 @input-border-radius @input-border-radius;
+
+    max-width: 100%;
+    width: 100%;
+    line-height: @line-height-base;
+    cursor: text;
+
+    // border: none;
+    // box-shadow: none;
+    // outline: none;
+    // background-color: transparent;
+    // padding: 0;
+    // margin: 0;
+    // width: auto !important;
+    // max-width: inherit;
+
+    &:focus {
+      // border: none;
+      // box-shadow: none;
+    }
+  }
+}
+
+.allowtag {
+  .bootstrap-tagsinput {
+    .tag b {
+      background-color: @label-success-bg;
+    }
+  }
+} 
+.blocktag {
+  .bootstrap-tagsinput {
+    .tag b {
+      background-color: @label-danger-bg;
+    }
+  }
+}   

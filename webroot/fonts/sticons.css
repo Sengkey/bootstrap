@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "sticons";
+    src: url("sticons.eot");
+    src: url("sticons.eot?#iefix") format("embedded-opentype"),
+         url("sticons.woff") format("woff"),
+         url("sticons.ttf") format("truetype"),
+         url("sticons.svg#sticons") format("svg");
+    font-weight: book;
+    font-style: normal;
+}

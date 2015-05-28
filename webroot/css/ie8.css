@@ -1,0 +1,38 @@
+body {
+  zoom :1;
+  line-height:1.01;
+}
+div {
+	width: 100%;
+}
+.container
+{
+    display:block;
+    width: 100%;
+    position: relative;
+}
+.row
+{
+    height: 100%;
+    display: block;
+}
+.row div {
+    margin:0; /*IE6 Hack*/
+    padding:0; /*IE6 Hack*/
+}
+.navbar-brand {
+    padding-bottom:0;
+}
+ul li a {
+    padding-top:10px\0/ !important;
+    padding-bottom:6px\0/ !important;
+}
+.stora_logo { 
+    background-image:url('../img/stora-logo-ie.png');
+}
+.livecounter {
+    line-height:50px !important;
+    padding-top:100px\0/ !important;
+    padding-bottom:20px\0/ !important;
+}
+

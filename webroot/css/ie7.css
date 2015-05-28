@@ -1,0 +1,32 @@
+body {
+  zoom :1;
+  line-height:1.01;
+}
+div {
+	width: 100%;
+}
+.container
+{
+    display:block;
+    width: 100%;
+    position: relative;
+}
+.row
+{
+    height: 100%;
+    display: block;
+}
+.row div {
+    margin:0; /*IE6 Hack*/
+    padding:0; /*IE6 Hack*/
+}
+.col-sm-12 h2 {
+    padding: 0 12px;
+    margin-top: 0;
+}
+i.icon {
+    display:none; /*IE5-7 Hack*/
+}
+.form-control {
+    padding:0;
+}
