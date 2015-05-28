@@ -1,1 +1,2 @@
-# bootstrap-yii
+# bootstrap
+for my personal use
