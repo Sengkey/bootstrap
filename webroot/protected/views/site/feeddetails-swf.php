@@ -1,1 +1,0 @@
-<object width="100%" height="300" data="<?php echo $data['feed']['videourl'];?>"></object>
